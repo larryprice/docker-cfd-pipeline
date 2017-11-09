@@ -7,7 +7,7 @@ RUN apt update && apt upgrade -y
 RUN apt install git curl wget software-properties-common build-essential cmake -y
 
 # use repo with modern nodejs versions
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt update && apt install nodejs -y
 
 # use repo with openfoam
